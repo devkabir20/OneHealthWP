@@ -72,5 +72,7 @@
     <script src="<?php echo get_template_directory_uri()?>/assets/vendor/wow/wow.min.js"></script>
 
     <script src="<?php echo get_template_directory_uri()?>/assets/js/theme.js"></script>
+
+    <?php wp_footer();?>
   </body>
 </html>

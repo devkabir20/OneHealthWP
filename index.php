@@ -39,7 +39,7 @@ get_header();
                   </a>
                 </div>
                 <div class="body">
-                  <h5 class="post-title"><a href="blog-details.html"><?php the_title();?></a></h5>
+                  <h5 class="post-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h5>
                   <div class="site-info">
                     <div class="avatar mr-2">
                       <div class="avatar-img">
@@ -85,6 +85,11 @@ get_header();
         </div>
         <div class="col-lg-4">
           <div class="sidebar">
+            <!-- <div class="sidebar-block">
+              <?php dynamic_sidebar('sidebar')?>
+            </div> -->
+            
+            
             <div class="sidebar-block">
               <h3 class="sidebar-title">Search</h3>
               <form action="#" class="search-form">

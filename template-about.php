@@ -13,6 +13,7 @@ get_header();
           </ol>
         </nav>
         <h1 class="font-weight-normal"><?php the_title();?></h1>
+        <p><?php the_excerpt();?></p>
       </div> <!-- .container -->
     </div> <!-- .banner-section -->
   </div> <!-- .page-banner -->

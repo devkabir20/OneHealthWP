@@ -6,7 +6,9 @@
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>One Health - Medical Center HTML5 Template</title>
+    <title> <?php bloginfo('name')?> <?php echo('- '); wp_title();?> <?php if(is_front_page()){echo('- ');bloginfo('description');}?></title>
+
+
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/css/maicons.css" />
 
@@ -20,8 +22,11 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/vendor/animate/animate.css" />
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/css/theme.css" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/style.css" />
+
+    <?php wp_head();?>
   </head>
-  <body>
+  <body <?php body_class();?>>
     <!-- Back to top button -->
     <div class="back-to-top"></div>
 
